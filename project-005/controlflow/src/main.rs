@@ -8,6 +8,15 @@ fn main() {
         println!("Number is greater than 9!");
     }
 
+    let x = -1;
+    if x < 0 {
+        println!("x is less than 0!");
+    } else if x > 0 {
+        println!("x is greater than 0!");
+    } else {
+        println!("x is equal to 0!");
+    }
+
     let x : i32 = 25;
     if x < 0 {
         println!("{x} is less than 0");
