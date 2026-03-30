@@ -4,6 +4,7 @@ fn main() {
     func_with_argument(5);
     println!("Function return value : {}", func_with_return_value());
     println!("Func with arg ret val : {}", func_with_arg_ret_val(20));
+    println!("Func with two params and return : {}", func_with_two_params(10, 20));
 }
 
 fn second_function() {
@@ -25,4 +26,8 @@ fn func_with_return_value() -> i32 {
 
 fn func_with_arg_ret_val(x : i32) -> i32 {
     x * 2
+}
+
+fn func_with_two_params(x: i32, y: i32) -> i32 {
+    x + y
 }
