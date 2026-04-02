@@ -1,7 +1,7 @@
 fn main() {
     println!("Vector example!");
     let mut v: Vec<i32> = Vec::new();
-    let mut v2 = vec![1, 2, 3, 4];
+    let _v2 = vec![1, 2, 3, 4];
 
     // Adding elements
     v.push(10);
@@ -34,6 +34,13 @@ fn main() {
     // functional style
     let sum: i32 = v.iter().sum();
     let doubled: Vec<i32> = v.iter().map(|x| x * 2).collect();
+
+    println!("Sum: {}", sum);
+
+    for val in &doubled {
+        print!("{} ", val);
+    }
+    println!();
 
     println!("len: {}, is_empty: {}", v.len(), v.is_empty());
     println!("contains 40: {}", v.contains(&40));
