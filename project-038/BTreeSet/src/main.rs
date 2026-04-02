@@ -1,7 +1,7 @@
 use std::collections::BTreeSet;
 
 fn main() {
-    println!("BTreeSet example!");
+    println!("BTreeSet example - Sorted Set!");
     let mut set = BTreeSet::new();
 
     // Adding elements
